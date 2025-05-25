@@ -109,7 +109,24 @@ input {
     display: grid;
 
 }
-
+.section{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+}
+.section__title{
+    font-size: var(--fs-h2);
+    line-height: 1.17em;
+    font-weight: var(--medium);
+    margin-bottom: 1.12rem;
+}
+.text-lg{
+    font-size: var(--fs-lg);
+    line-height: 1.67em;
+}
+.text-sm{
+    font-size: var(--fs-sm);
+    line-height: 1.43em;
+}
 /*=============== Header ===============*/
 .header{
     position: absolute;
@@ -171,6 +188,7 @@ input {
     background-size: cover;
     background-position: 50%;
     padding-top: 5.5rem;
+    margin-bottom: 2.5rem;
     position: relative;
 }
 .home::before{
@@ -193,7 +211,7 @@ input {
     width: 90%;
     height: 380px;
     object-fit: cover;
-    border-radius: 0.3rem;
+    border-radius: 0.875rem;
     transform: translateY(3.125rem);
     box-shadow: 0 0 27px rgb(96 96 96 / 34%);
 }
@@ -235,11 +253,83 @@ input {
     opacity: 1;
 }  
 /*=============== Hello ===============*/
-
+.hello__details {
+    margin-bottom: 1.67em;
+    text-align: justify;
+}
 /*=============== Buttons ===============*/
-
+.button{
+    display: inline-block;
+    background-color: var(--primary-color);
+    color :#fff;
+    padding: 1.1em 2.1em;
+    border-radius: 1.56rem;
+    font-weight: var(--semibold);
+    transition: 0.3s;
+}
+.button:hover{
+    background-color: var(--primary-color-alt);
+}
+.button--flex{
+    display: inline-flex;
+    align-items: flex-start;
+    column-gap: 0.3rem;
+}  
 /*=============== Services ===============*/
-
+.services__container{
+    grid-template-columns: repeat(2, 1fr);
+    gap:  2.8rem;
+}
+.services__item{
+    width: 100%;
+    border: 1px solid var(--border-color);
+    padding: 2.5rem 1.25rem 1.875rem;
+    text-align: center;
+    border-radius: 20px;
+}
+.icon__box{
+    border: 1px solid var(--border-color);
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+    position: relative;
+    display: flex;
+}
+.services__icon{
+    width: 32px;
+    margin: auto;
+}
+.services__dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    animation: service-dot 2s linear infinite;
+    animation-play-state: paused;
+}
+.services__item:hover .services__dot{
+    animation-play-state: running;
+}
+@keyframes service-dot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(1turn);
+    }
+}
+.dot{
+    width: 13px;
+    height: 13px;
+    background-color: var(--title-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0.9rem;
+}
 /*=============== Resume ===============*/
 
 /*=============== Skills ===============*/
