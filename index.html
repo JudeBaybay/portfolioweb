@@ -49,11 +49,11 @@
             <h1 class="home__name">Jude Anzelmo Baybay</h1>
             <p class="home__work">Web and Mobile App Developer</p>
             <dl class="home__list">
-              <dt>Age:</dt>
+              <dt><i class="ri-calendar-fill"></i>  Age:</dt>
               <dd>19 Years Old</dd>
-              <dt>Phone:</dt>
+              <dt><i class="ri-phone-fill"></i>  Phone:</dt>
               <dd>(+63)9932705194</dd>
-              <dt>Email:</dt>
+              <dt><i class="ri-mail-fill"></i>  Email:</dt>
               <dd>judeanzelmo@gmail.com</dd>
             </dl>
             <div class="home__socials">
@@ -212,20 +212,20 @@
                 <div class="skills__titles">
                   <i class="ri-javascript-fill"></i>
                   <p class="skills__name text-sm">JavaScript</p>
-                  <span class="skills__number text-sm">55%</span>
+                  <span class="skills__number text-sm">35%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 55%"></span>
+                  <span class="skills__percentage" style="width: 35%"></span>
                 </div>
               </div>
               <div class="skills__data">
                 <div class="skills__titles">
                   <i class="ri-reactjs-fill"></i>
                   <p class="skills__name text-sm">React</p>
-                  <span class="skills__number text-sm">85%</span>
+                  <span class="skills__number text-sm">65%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 80%"></span>
+                  <span class="skills__percentage" style="width: 65%"></span>
                 </div>
               </div>
             </div>
@@ -237,10 +237,10 @@
                 <div class="skills__titles">
                   <i class="ri-php-fill"></i>
                   <p class="skills__name text-sm">PHP</p>
-                  <span class="skills__number text-sm">85%</span>
+                  <span class="skills__number text-sm">80%</span>
                 </div>
                 <div class="skills__bar">
-                  <span class="skills__percentage" style="width: 85%"></span>
+                  <span class="skills__percentage" style="width: 80%"></span>
                 </div>
               </div>
               <div class="skills__data">
@@ -267,8 +267,100 @@
           </div>
         </div>
       </section>
+      <section class="work section container" id="portfolio">
+        <h2 class="section__title">Works_</h2>
+        <div class="project__categories">
+            <button class="category__btn text-xs active-work" data-filter="all">All</button>
+            <button class="category__btn text-xs" data-filter=".app">Mobile Apps</button>
+            <button class="category__btn text-xs" data-filter=".web">Websites</button>
+        </div>
+        <div class="projects__container grid">
+            <div class="project__item grid mix app">
+                <img src="assests/img/project-1.png" alt="" class="project__img" />
+                <div class="project__data">
+                    <h3 class="project__title text-lg">STICA OrgConnect Template</h3>
+                    <p class="project__description">A social media platform for STICA organizations
+                        and clubs to connect, share updates, and collaborate on events.</p>
+                    </p>
+                    <h4 class="project__stack text-xs">Used Stack:</h4>
+                    <ul class="tags text-sm">
+                        <li>Android Studio</li>
+                        <li>Java</li>
+                        <li>Google Firebase</li>
+                    </ul>
+                    <a href="https://github.com/JudeBaybay/OrgConnect" target="_blank" class="project__link text-sm">OrgConnect</a>
+                </div>
+            </div>
+            <div class="project__item grid mix web" >
+                <img src="assests/img/project-2.png" alt="" class="project__img" />
+                <div class="project__data">
+                    <h3 class="project__title text-lg">SchedulEase Template</h3>
+                    <p class="project__description">A Web-based scheduling system that will make your class
+                        scheduling easier and more efficient.</p>
+                    </p>
+                    </p>
+                    <h4 class="project__stack text-xs">Used Stack:</h4>
+                    <ul class="tags text-sm">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
+                    <a href="https://github.com/JudeBaybay/SchedulEase" target="_blank" class="project__link text-sm">SchedulEase</a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="contact section" id="contact">
+        <div class="contact__content container">
+            <h2 class="section__title">Contact Me_</h2>
+            <div class="contact__container grid">
+                <div class="contact__info">
+                    <dl class="contact__list">
+                        <dt><i class="ri-phone-fill"></i>  Phone:</dt>
+                        <dd>(+63)9932705194</dd>
+                        <dt><i class="ri-mail-fill"></i>  Email:</dt>
+                        <dd>judeanzelmo@gmail.com</dd>
+                    </dl>
+                    <ul class="contact__socials">
+                        <li>
+                            <a href="https://github.com/JudeBaybay" class="contact__social-link"><i class="ri-github-fill"></i>  Github</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/jude.baybay" class="contact__social-link"><i class="ri-facebook-box-fill"></i>  Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/jowddd_?igsh=YW5iZGRpeWlpYjAw" class="contact__social-link"><i class="ri-instagram-fill"></i>  Instagram</a>
+                        </li>
+                        <li>
+                            <a href="https://discordapp.com/users/741588762248609892" class="contact__social-link"><i class="ri-discord-fill"></i>  Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact__form">
+                    <p class="contact__form-title">Or write a letter here...</p>
+                    <form action="https://formsubmit.co/judeanzelmo@gmail.com" method="POST"id="contact-form">
+                        <div class="contact__input-div">
+                            <input type="text" name="name" placeholder="Name" class="contact__input" id="contact-name" required>
+                        </div>
+                        <div class="contact__input-div">
+                            <input type="email" name="email" placeholder="Email" class="contact__input" id="contact-email" required>
+                        </div>
+                        <div class="contact__input-div">
+                            <textarea placeholder="Type your message here..." name="text" id="message" class="contact__input textarea" cols="30" rows="10" required></textarea>
+                        </div>
+                        <button type="submit" class="button contact__button"><i class="ri-send-plane-fill"></i> Send Message</button>
+                    </form>
+                    <p class="footer__copy">
+                        &copy; 2024 Jude Anzelmo Baybay. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+      </section>
     </main>
 
+    <script src="assests/js/mixitup.min.js"></script>
     <script src="assests/js/main.js"></script>
   </body>
 </html>
