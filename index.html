@@ -338,14 +338,17 @@
                     <p class="contact__form-title">Or write a letter here...</p>
                     <form action="https://formsubmit.co/judeanzelmo@gmail.com " method="POST"id="contact-form">
                         <div class="contact__input-div">
-                            <input type="text" name="name" placeholder="Name" class="contact__input" id="contact-name" required>
+                            <input type="text" name="Name" placeholder="Name" class="contact__input" id="contact-name" required>
                         </div>
                         <div class="contact__input-div">
-                            <input type="email" name="email" placeholder="Email" class="contact__input" id="contact-email" required>
+                            <input type="email" name="Email" placeholder="Email" class="contact__input" id="contact-email" required>
                         </div>
                         <div class="contact__input-div">
-                            <textarea placeholder="Type your message here..." name="text" id="message" class="contact__input textarea" cols="30" rows="10" required></textarea>
+                            <textarea placeholder="Type your message here..." name="Text" id="message" class="contact__input textarea" cols="30" rows="10" required></textarea>
                         </div>
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="text" name="_honey" style="display:none">
                         <button type="submit" class="button contact__button"><i class="ri-send-plane-fill"></i> Send Message</button>
                     </form>
                     <p class="footer__copy">
