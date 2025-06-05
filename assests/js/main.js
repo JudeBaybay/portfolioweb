@@ -1,11 +1,23 @@
-const navlink = document.querySelectorAll(".nav__link");
+const navMenu = document.getElementById('nav-menu'),
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close');
 
-function activeLink() {
-  navlink.forEach((a) => a.classList.remove("active-link"));
-  this.classList.add("active-link");
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu');
+  });
 }
-
-navlink.forEach((a) => a.addEventListener("click", activeLink));
+if (navClose) {
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
+  });
+}
+const navLink = document.querySelectorAll('.nav__link');
+function linkAction() {
+  const navMenu = document.getElementById('nav-menu');
+  navMenu.classList.remove('show-menu');
+}
+navLink.forEach((n) => n.addEventListener('click', linkAction));
 
 function scrollHeader() {
   const header = document.getElementById("header");
