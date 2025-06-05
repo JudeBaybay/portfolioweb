@@ -14,19 +14,19 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li>
-              <a href="#home" class="nav__link active-link">Hello</a>
+              <a href="#home" class="nav__link active-link"><i class="ri-home-fill"></i> Hello</a>
             </li>
             <li>
-              <a href="#services" class="nav__link">Services</a>
+              <a href="#services" class="nav__link"><i class="ri-service-fill"></i> Services</a>
             </li>
             <li>
-              <a href="#resume" class="nav__link">Resume</a>
+              <a href="#resume" class="nav__link"><i class="ri-file-paper-2-fill"></i> Resume</a>
             </li>
             <li>
-              <a href="#portfolio" class="nav__link">Portfolio</a>
+              <a href="#portfolio" class="nav__link"><i class="ri-window-fill"></i> Works</a>
             </li>
             <li>
-              <a href="#contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link"><i class="ri-mail-send-fill"></i> Contact</a>
             </li>
           </ul>
           <div class="nav__close" id="nav-close">
@@ -149,13 +149,13 @@
             <h3 class="resume__title text-sm">Education & Achievements</h3>
             <div class="resume__item">
               <h3 class="resume__tsubtitle text-sm">
-                Mary, Cause of Our Joy Catholic School
+                <i class="ri-school-fill"></i> Mary, Cause of Our Joy Catholic School
               </h3>
               <p class="resume__date text-sm">2018-2022</p>
               <p class="resume__description text-lg">Best in Computer</p>
             </div>
             <div class="resume__item">
-              <h3 class="resume__tsubtitle text-sm">STI College Alabang</h3>
+              <h3 class="resume__tsubtitle text-sm"><i class="ri-school-fill"></i> STI College Alabang</h3>
               <p class="resume__date text-sm">2022-Present</p>
               <p class="resume__description text-lg">Best in Programming 1&2</p>
               <p class="resume__description text-lg">
@@ -172,7 +172,7 @@
           <div class="resume__data">
             <h3 class="resume__title text-sm">Work Experience</h3>
             <div class="resume__item">
-              <h3 class="resume__tsubtitle text-sm">ELDBS</h3>
+              <h3 class="resume__tsubtitle text-sm"><i class="ri-macbook-fill"></i> ELDBS</h3>
               <p class="resume__date text-sm">2024</p>
               <p class="resume__description text-lg">Work Immersion</p>
             </div>
@@ -267,9 +267,9 @@
       <section class="work section container" id="portfolio">
         <h2 class="section__title">Works_</h2>
         <div class="project__categories">
-            <button class="category__btn text-xs active-work" data-filter="all">All</button>
-            <button class="category__btn text-xs" data-filter=".app">Mobile Apps</button>
-            <button class="category__btn text-xs" data-filter=".web">Websites</button>
+            <button class="category__btn text-xs active-work" data-filter="all"><i class="ri-shining-2-fill"></i> All</button>
+            <button class="category__btn text-xs" data-filter=".app"><i class="ri-smartphone-fill"></i> Mobile Apps</button>
+            <button class="category__btn text-xs" data-filter=".web"><i class="ri-pages-fill"></i> Websites</button>
         </div>
         <div class="projects__container grid">
             <div class="project__item grid mix app">
@@ -281,9 +281,9 @@
                     </p>
                     <h4 class="project__stack text-xs">Used Stack:</h4>
                     <ul class="tags text-sm">
-                        <li>Android Studio</li>
-                        <li>Java</li>
-                        <li>Google Firebase</li>
+                        <li><i class="ri-android-fill"></i> Android Studio</li>
+                        <li><i class="ri-java-line"></i> Java</li>
+                        <li><i class="ri-firebase-fill"></i> Google Firebase</li>
                     </ul>
                     <a href="https://github.com/JudeBaybay/OrgConnect" target="_blank" class="project__link text-sm">OrgConnect</a>
                 </div>
@@ -298,10 +298,10 @@
                     </p>
                     <h4 class="project__stack text-xs">Used Stack:</h4>
                     <ul class="tags text-sm">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
+                        <li><i class="ri-html5-fill"></i> HTML</li>
+                        <li><i class="ri-css3-fill"></i> CSS</li>
+                        <li><i class="ri-javascript-fill"></i> JavaScript</li>
+                        <li><i class="ri-php-fill"></i> PHP</li>
                     </ul>
                     <a href="https://github.com/JudeBaybay/SchedulEase" target="_blank" class="project__link text-sm">SchedulEase</a>
                 </div>
@@ -336,31 +336,29 @@
                 </div>
                 <div class="contact__form">
                     <p class="contact__form-title">Or write a letter here...</p>
-                    <form action="https://formsubmit.co/judeanzelmo@gmail.com" method="POST" id="contact-form">
+                    <form action="" method="POST" id="contact-form">
                         <div class="contact__input-div">
-                            <input type="text" name="Name" autocomplete="on" placeholder="Name" class="contact__input" id="contact-name" required>
+                            <input type="text" name="name" autocomplete="on" placeholder="Name" class="contact__input" id="contact-name" >
                         </div>
                         <div class="contact__input-div">
-                            <input type="email" name="Email" autocomplete="on" placeholder="Email" class="contact__input" id="contact-email" required>
+                            <input type="email" name="email" autocomplete="on" placeholder="Email" class="contact__input" id="contact-email" >
                         </div>
                         <div class="contact__input-div">
-                            <textarea placeholder="Type your message here..." name="Text" id="message" class="contact__input textarea" cols="30" rows="10" required></textarea>
+                            <textarea placeholder="Type your message here..." name="message" id="message" class="contact__input textarea" cols="30" rows="10" ></textarea>
                         </div>
-                        <input type="text" name="_honey" style="display:none">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_captcha" value="false">
+                        <p class="contact__message text-sm" id="contact-message"></p>
                         <button type="submit" class="button contact__button"><i class="ri-send-plane-fill"></i> Send Message</button>
                     </form>
                     <p class="footer__copy">
-                        &copy; 2024 Jude Anzelmo Baybay. All rights reserved.
+                        &copy; 2025 Jude Anzelmo Baybay. All rights reserved.
                     </p>
                 </div>
             </div>
         </div>
       </section>
     </main>
-
     <script src="assests/js/mixitup.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="assests/js/main.js"></script>
   </body>
 </html>
