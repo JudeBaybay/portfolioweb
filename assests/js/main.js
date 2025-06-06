@@ -35,6 +35,7 @@ var mixerProjects = mixitup(".projects__container", {
   },
 });
 
+
 const linkWork = document.querySelectorAll(".category__btn");
 
 function activeWork() {
