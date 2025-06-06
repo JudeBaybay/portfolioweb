@@ -741,6 +741,18 @@ input {
     margin-bottom: 0.6rem;
   }
 }
+@media screen and (max-width: 439px) {
+  :root{
+    --fs-h1:2rem;
+  }
+  .home__img{
+    object-position: 45% 10%;
+    border-radius: 100%;
+    width: 25rem;             
+    height: 25rem;
+    margin-left: calc(50% - 12.5rem);
+  }
+}
 
 /* for small devices */
 @media screen and (max-width: 350px) {
