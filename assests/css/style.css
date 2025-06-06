@@ -941,7 +941,7 @@ input {
   }
 
   .contact__container,
-  .services__container {
+  .skills__container{
     grid-template-columns: 1fr;
   }
 
@@ -966,7 +966,6 @@ input {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.2rem;
   }
-
 
   .awards__button-container {
     margin-top: 1.25rem;
