@@ -941,9 +941,13 @@ input {
   }
 
   .contact__container,
-  .skills__container,
   .services__container {
     grid-template-columns: 1fr;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
   }
 
   .skills__container {
@@ -1005,6 +1009,10 @@ input {
     width: 20rem;
     height: 20rem;
     margin-left: calc(50% - 10rem);
+  }
+
+  .skills__container {
+    grid-template-columns: 1fr;
   }
 
   .awards__grid {
