@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       awardsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
-    toggleBtn.textContent = isExpanded ? 'Show More 🠧' : 'Show Less 🠥';
+    toggleBtn.textContent = isExpanded ? 'Show More' : 'Show Less';
     isExpanded = !isExpanded;
   });
 });
